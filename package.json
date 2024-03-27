@@ -1,0 +1,43 @@
+{
+	"name": "@rbxts/react-hooks",
+	"version": "1.0.0",
+	"main": "out/init.lua",
+	"repository": "https://github.com/howmanysmall/react-hooks.git",
+	"author": "HowManySmall",
+	"license": "MIT",
+	"scripts": {
+		"build": "rbxtsc",
+		"watch": "rbxtsc -w",
+		"prepublishOnly": "bun run build"
+	},
+	"types": "out/index.d.ts",
+	"files": ["out", "!**/*.tsbuildinfo"],
+	"publishConfig": {
+		"access": "public"
+	},
+	"keywords": ["react", "hooks", "roact", "roact17"],
+	"devDependencies": {
+		"@biomejs/biome": "1.6.3",
+		"@rbxts/compiler-types": "^2.3.0-types.0",
+		"@rbxts/types": "^1.0.766",
+		"@typescript-eslint/eslint-plugin": "^7.4.0",
+		"@typescript-eslint/parser": "^7.4.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-perfectionist": "^2.7.0",
+		"eslint-plugin-prettier": "^5.1.3",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-roblox-ts": "^0.0.36",
+		"eslint-plugin-unicorn": "^51.0.1",
+		"prettier": "^3.2.5",
+		"roblox-ts": "next",
+		"typescript": "^5.4.3"
+	},
+	"dependencies": {
+		"@rbxts/rbx-debug": "^1.0.1",
+		"@rbxts/testez": "^0.4.2-ts.0"
+	},
+	"peerDependencies": {
+		"@rbxts/react": "*",
+		"@rbxts/react-roblox": "*"
+	}
+}
