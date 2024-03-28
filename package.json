@@ -29,11 +29,14 @@
 		"eslint-plugin-roblox-ts": "^0.0.36",
 		"eslint-plugin-unicorn": "^51.0.1",
 		"prettier": "^3.2.5",
+		"rbxts-transformer-services": "^1.1.1",
 		"roblox-ts": "next",
 		"typescript": "^5.4.3"
 	},
 	"dependencies": {
 		"@rbxts/rbx-debug": "^1.0.1",
+		"@rbxts/services": "^1.5.4",
+		"@rbxts/sift": "^0.0.8",
 		"@rbxts/testez": "^0.4.2-ts.0"
 	},
 	"peerDependencies": {

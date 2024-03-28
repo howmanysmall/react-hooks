@@ -5,7 +5,7 @@
 import { TableToString } from "@rbxts/rbx-debug";
 import { useEffect, useRef } from "@rbxts/react";
 
-interface RenderInfo {
+export interface RenderInfo {
 	readonly name: string;
 	readonly renders: number;
 	readonly sinceLastRender: number;
@@ -31,9 +31,10 @@ export function useRenderInfo(name = "Unknown", logFunction = print, logEnabled 
 
 	count.current += 1;
 
-	useEffect(() => {
+	function lastRenderUpdateEffect() {
 		lastRender.current = os.clock();
-	});
+	}
+	useEffect(lastRenderUpdateEffect);
 
 	const sinceLastRender = lastRender.current === undefined ? 0 : currentTime - lastRender.current;
 	const info = {

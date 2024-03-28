@@ -1,6 +1,7 @@
 //!native
 //!nonstrict
 //!optimize 2
+
 import { useEffect, useRef } from "@rbxts/react";
 
 /**
@@ -10,9 +11,11 @@ import { useEffect, useRef } from "@rbxts/react";
  */
 export function useRendersSpy() {
 	const count = useRef(0);
-	useEffect(() => {
+
+	function countIncrementEffect() {
 		count.current += 1;
-	});
+	}
+	useEffect(countIncrementEffect);
 
 	return count.current;
 }
