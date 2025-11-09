@@ -32,7 +32,7 @@
 		"rbxts-transformer-services": "^1.1.1",
 		"roblox-ts": "^3.0.0",
 		"@rbxts/testez": "^0.4.2-ts.0",
-		"typescript": "^5.4.3"
+		"typescript": "5.5.3"
 	},
 	"dependencies": {
 		"@rbxts/rbx-debug": "^1.0.2-ts.0",
