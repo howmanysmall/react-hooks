@@ -6,8 +6,8 @@
 	"author": "HowManySmall",
 	"license": "MIT",
 	"scripts": {
-		"build": "rbxtsc",
-		"watch": "rbxtsc -w",
+		"build": "bun x --bun rbxtsc",
+		"watch": "bun x --bun rbxtsc -w",
 		"prepublishOnly": "bun run build"
 	},
 	"types": "out/index.d.ts",
@@ -18,8 +18,8 @@
 	"keywords": ["react", "hooks", "roact", "roact17"],
 	"devDependencies": {
 		"@biomejs/biome": "1.6.3",
-		"@rbxts/compiler-types": "^2.3.0-types.0",
-		"@rbxts/types": "^1.0.766",
+		"@rbxts/compiler-types": "latest",
+		"@rbxts/types": "latest",
 		"@typescript-eslint/eslint-plugin": "^7.4.0",
 		"@typescript-eslint/parser": "^7.4.0",
 		"eslint-config-prettier": "^9.1.0",
@@ -30,7 +30,7 @@
 		"eslint-plugin-unicorn": "^51.0.1",
 		"prettier": "^3.2.5",
 		"rbxts-transformer-services": "^1.1.1",
-		"roblox-ts": "next",
+		"roblox-ts": "^3.0.0",
 		"@rbxts/testez": "^0.4.2-ts.0",
 		"typescript": "^5.4.3"
 	},
