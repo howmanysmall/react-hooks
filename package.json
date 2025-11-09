@@ -1,6 +1,6 @@
 {
 	"name": "@rbxts/react-hooks",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"main": "out/init.lua",
 	"repository": "https://github.com/howmanysmall/react-hooks.git",
 	"author": "HowManySmall",
@@ -35,7 +35,7 @@
 		"typescript": "^5.4.3"
 	},
 	"dependencies": {
-		"@rbxts/rbx-debug": "^1.0.1",
+		"@rbxts/rbx-debug": "^1.0.2-ts.0",
 		"@rbxts/services": "^1.5.4",
 		"@rbxts/sift": "^0.0.8"
 	},
